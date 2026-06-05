@@ -1,0 +1,65 @@
+{
+  "agents": {
+    "N_producers": 30,
+    "N_suppliers": 30,
+    "p_experienced": 0.30,
+    "p_mid": 0.40,
+    "p_new": 0.30,
+    "p_female_supplier": 0.08
+  },
+  "discrimination": {
+    "mu_M": 0.50,
+    "mu_F": 0.05,
+    "sigma": 0.15
+  },
+  "network": {
+    "type": "watts_strogatz",
+    "k": 4,
+    "rewiring_p": 0.20
+  },
+  "supply_side": {
+    "omega_alpha": 0.12,
+    "lambda_m": 1.2,
+    "c_t": 0.05,
+    "gamma": 0.08,
+    "c_L": 0.20,
+    "rho": 0.18
+  },
+  "demand_side": {
+    "U_base": 1.00,
+    "psi_w": 0.10,
+    "psi_p": 0.08,
+    "psi_k": 0.05
+  },
+  "exit_dynamics": {
+    "theta_S": 1.50,
+    "h_0": 0.001,
+    "h_1": 0.06,
+    "h_2": 0.02
+  },
+  "supplier_learning": {
+    "eta": 0.05
+  },
+  "experience_multipliers": {
+    "new":         {"negotiation": 1.30, "advice": 0.50},
+    "mid":         {"negotiation": 1.00, "advice": 1.00},
+    "experienced": {"negotiation": 0.70, "advice": 1.50}
+  },
+  "simulation": {
+    "T_months": 120,
+    "replications": 200,
+    "exit_modes": ["endogenous", "exogenous"]
+  },
+  "calibrations": {
+    "low":  {"mu_M": 0.30, "lambda_m": 0.8, "omega_alpha": 0.08, "gamma": 0.06},
+    "mid":  {"mu_M": 0.50, "lambda_m": 1.2, "omega_alpha": 0.12, "gamma": 0.08},
+    "high": {"mu_M": 0.70, "lambda_m": 1.6, "omega_alpha": 0.16, "gamma": 0.10}
+  },
+  "policies": {
+    "supply_quota":       {"p_female_supplier_new": 0.30},
+    "producer_signal":    {"psi_w_new": 0.25},
+    "cooperative":        {"cooperative_active": true, "omega_alpha_new": 0.06, "psi_k_new": 0.10},
+    "supplier_training":  {"lambda_m_new": 0.5, "mu_M_new": 0.30, "learning_active": true},
+    "cumulative_policy":  {"all_policies_active": true}
+  }
+}
