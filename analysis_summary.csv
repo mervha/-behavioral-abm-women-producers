@@ -1,0 +1,11 @@
+exit_mode,scenario,mean,ci_low,ci_high,baseline_mean,marginal_pct,welch_t,p_value,cohens_d
+endogenous,supply_quota,38.5276,37.5446,39.4722,25.6162,50.4,19.649,0.0,1.965
+endogenous,producer_signal,41.6683,40.6939,42.6892,25.6162,62.66,24.564,0.0,2.456
+endogenous,cooperative,30.9825,30.0515,31.8776,25.6162,20.95,8.536,0.0,0.854
+endogenous,supplier_training,78.6923,77.251,80.1641,25.6162,207.2,63.946,0.0,6.395
+endogenous,cumulative_policy,103.0156,101.2728,104.723,25.6162,302.15,74.099,0.0,7.41
+exogenous,supply_quota,44.576,43.6448,45.4898,29.6146,50.52,23.104,0.0,2.31
+exogenous,producer_signal,48.1656,47.317,49.0264,29.6146,62.64,29.665,0.0,2.966
+exogenous,cooperative,35.856,34.9578,36.7129,29.6146,21.08,9.906,0.0,0.991
+exogenous,supplier_training,92.3256,92.1691,92.5003,29.6146,211.76,139.645,0.0,13.965
+exogenous,cumulative_policy,120.2729,119.9955,120.5327,29.6146,306.13,196.218,0.0,19.622
